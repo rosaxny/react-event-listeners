@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
+import ClickButton from './components/ClickButton';
+import HoverButton from './components/HoverButton';
 import './App.css';
 
 class App extends Component {
+  handleClick() {
+    console.log('hey');
+  }
+  handleHover() {
+    console.log(':(');
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <ClickButton onClick={this.handleClick} text="don't click me" />
+        <HoverButton onMouseOver={this.handleHover} text="stop hovering over me" />
       </div>
     );
   }
