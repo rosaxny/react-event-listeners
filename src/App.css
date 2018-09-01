@@ -2,8 +2,13 @@
   text-align: center;
 }
 button {
-  margin: 25px 25px;
+  margin: 5px 25px;
   height: 30px;
+}
+div {
+  width: 250px;
+  margin: 10px auto;
+  overflow-wrap: break-word;
 }
 .display-input {
   margin-top: 5px;
@@ -11,10 +16,4 @@ button {
 form .submit-btn {
   margin: 3px 3px;
   height: 22px;
-}
-.display-input-div {
-  padding: 25px;
-  width: 200px;
-  margin: 15px auto;
-  overflow-wrap: break-word;
 }

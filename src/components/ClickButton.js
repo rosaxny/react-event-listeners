@@ -5,7 +5,10 @@ export default class Button extends React.Component {
         return (
             <div>
                 <button onClick={this.props.onClick}>{this.props.text}</button>
-                <p>{this.props.reply}</p>
+                <div>
+                    <p>{this.props.reply}</p>
+                </div>
+                
             </div>   
         )
     }

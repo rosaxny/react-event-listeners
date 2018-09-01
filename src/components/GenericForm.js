@@ -11,8 +11,6 @@ export default class GenericForm extends React.Component {
                     onChange={this.props.onChange}
                 />
                 <button className="submit-btn">Submit</button>
-                <br />
-                <br />
                 <div className="display-input-div">
                     <p className="display-input">{this.props.value}</p>
                 </div>
